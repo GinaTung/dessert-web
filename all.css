@@ -1,0 +1,298 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  /* outline: 1px solid #000; */
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Segoe UI",
+    "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+  /* apple字體,apple,Wins英文,wins中文,android,ios,通用字體,通用字體 */
+  line-height: 1.5;
+/*  font-size: 16px 不用額外設定，因為預設就是 16px。  */
+/*   font-size: 16px; */
+  /*   font-weight: 600; */
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: #3f5d45;
+  display: block;
+}
+/* 文字顏色 */
+.text-primary {
+  color: #3f5d45;
+}
+.text-secondary {
+  color: #eaf0ed;
+}
+/* 背影顏色 */
+.bg-primary {
+  background: #3f5d45;
+}
+.bg-secondary {
+  background: #eaf0ed;
+}
+/* 主區塊 */
+.container {
+/*  .container 的寬度建議調整為 940px 來跟設計稿一樣。  */
+  max-width: 940px;
+/*   padding: 0 42px; */
+  margin: 0px auto;
+}
+.header {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.img-viewport-width-70 {
+  width: 70%;
+}
+.section {
+  display: flex;
+  align-items: center;
+}
+/* a原設定lh:1.5 比圖片高  */
+.lh-1 {
+  line-height: 1;
+}
+.menu {
+  display: flex;
+  margin-right: 49px;
+}
+.menu li a {
+  padding: 0 30px;
+  line-height: 40px;
+}
+.menu li a:hover {
+  color: #eaf0ed;
+  background: #3f5d45;
+}
+
+.banner {
+  margin-bottom: 30px;
+}
+
+.side {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.leftside {
+  width: 32.5%;
+  margin-right: 20px;
+  text-align: center;
+}
+/* 邊框顏色 */
+.bd-primary {
+  border: 1px solid #3f5d45;
+}
+.bd-secondary {
+  border: 1px solid #eaf0ed;
+}
+.leftside li a {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  line-height: 40px;
+}
+.text-hover:hover {
+  color: #000;
+}
+.bg-hover:hover {
+  background: #eaf0ed;
+}
+.text-hover2:hover {
+  color: #eaf0ed;
+}
+.bg-hover2:hover {
+  background: #3f5d45;
+}
+.rightside {
+  width: 67.5%;
+}
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.card {
+  width: calc(50%-10px);
+  margin-bottom: 20px;
+}
+.card-section {
+  position: relative;
+}
+/* 本日精選 */
+.tag {
+  padding: 10px;
+  position: absolute;
+  left: 20px;
+  top: 0;
+  /* 轉成直方向 */
+  writing-mode: vertical-rl;
+/*  文字的間距、區塊的寬高可以再對照設計稿來調整一下。例如：「本日精選」的文字、側邊欄的寬高等。  */
+  line-height: 1;
+  letter-spacing:6px;
+}
+/* 加入最愛 */
+.heart-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  /* a原設定lh:1.5 比圖片高  */
+  line-height: 1;
+}
+.heart-icon:hover {
+  background: url("https://raw.githubusercontent.com/GinaTung/2023sweetaste/080ec0522d97f3e3b214ddc1acff89c9f80ed80c/img/favorite_black_24dp%20(1).svg"); /*滑鼠移過顯示圖片*/
+  background-size: 20px 18px;
+  color: #3f5d45;
+}
+.card-item {
+  display: flex;
+  text-align: center;
+  max-width: 300px;
+  border: 1px solid #eaf0ed;
+}
+/* 卡片產品名稱 */
+.product-name {
+  width: 58%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-right: 1px solid #eaf0ed;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 300;
+}
+/* 卡片產品價格 */
+.product-price {
+  width: 42%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 20px;
+  line-height: 24px;
+}
+/* 加入購物車按鈕 */
+.addCart {
+  padding: 16px 90px;
+  border-right: 1px solid #eaf0ed;
+  font-size: 24px;
+  line-height: 20px;
+}
+.addCart:hover {
+  background: #3f5d45;
+  color: #eaf0ed;
+}
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+.pagination li a {
+  padding: 16px 24px;
+  border: 1px solid #eaf0ed;
+}
+
+.subscription {
+  background: #3f5d45;
+}
+/* 訂閱logo大小 */
+.logo-desktop-xs {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+.subscription-section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 122px;
+  align-items: center;
+}
+.subscription-leftSide {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  line-height: 29px;
+}
+/* 輸入訂閱電郵 */
+.inputBox {
+  width: 324px;
+  height: 56px;
+  position: relative;
+  z-index: 1;
+/*  email 的 input 可以使用 text-indent 調整文字輸入的起點 ~  */
+  text-indent:40px;
+}
+.icon-mail {
+  position: absolute;
+  padding: 16px 0 16px 20px;
+  z-index: 2;
+}
+/* 訂閱送出黃色按鈕 */
+.btn-warming {
+  position: absolute;
+  background: #ffe180;
+  width: 64px;
+  height: 56px;
+  z-index: 5;
+  display: inline-block;
+}
+.btn-warming:hover {
+  background: #eaf0ed;
+}
+.icon-arrow-forward {
+  width: 16px;
+  height: 16px;
+  margin: 20px 24px;
+}
+.footer {
+  background: #eaf0ed;
+  padding: 30px 0;
+  margin-top: 0;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.footer-leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 24px;
+}
+.footer-rightSide {
+  /* 轉成直方向 */
+  writing-mode: vertical-rl;
+  height: 219px;
+}
+.footer-rightSide p {
+  /* 文字跟文字間格 */
+  letter-spacing: 5px;
+  font-size: 24px;
+  color: #3f5d45;
+}
+/* 文字縮排 */
+.text-indent {
+  text-indent: 16px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom a{
+    display: inline-block;
+}
+.link-desktop-xxs {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
